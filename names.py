@@ -72,6 +72,6 @@ def number2namecount(n: int) -> int:
     name = number2name(n)
     counter = 0
     for i in name:
-        if i != " " and i != "," and i != "-":
+        if i not in [" ","-",","]:
             counter += 1
     return counter
